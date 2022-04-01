@@ -1,0 +1,22 @@
+{
+  "name": "studbud",
+  "version": "1.0.0",
+  "description": "study web prototype for a2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianr202/studbud.git"
+  },
+  "keywords": [
+    "studbud"
+  ],
+  "author": "Adrian Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianr202/studbud/issues"
+  },
+  "homepage": "https://github.com/adrianr202/studbud#readme"
+}
