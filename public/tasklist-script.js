@@ -36,15 +36,13 @@ function addTask(taskDescription, createdDate, dueDate, priorityRating, estimate
 
   // Add the task to our array of tasks
   taskList.push(task);
-  taskList.push(taskDescription)
-  taskList.push(dueDate)
-  taskList.push(priorityRating)
-  taskList.push(estimatedTime)
+  // taskList.push(taskDescription)
+  // taskList.push(dueDate)
+  // taskList.push(priorityRating)
+  // taskList.push(estimatedTime)
 
   // Separate the DOM manipulation from the object creation logic
-  renderTask(task);
 }
-
 
 // Function to display the item on the page
 function renderTask(task) {
