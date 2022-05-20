@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <h1>StudBud</h1>
+  <h1>Overview</h1>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
-  <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
-  <!-- SCSS file -->
-  <link rel="stylesheet" href="./scss/main.scss"/> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 
+  <h1>Overview</h1>
+  <!-- Flow Time Tracker -->
+  <div class="flow-time" id="flow-time"></div>
+
+  <!-- Kanban Board -->
+  <div class="kanban-board" id="kanban"></div>
+
+  <!-- Task List Viewer -->
+  <div class="task-list" id="task-list-viewer">
+
+    <h1>Task List</h1>
+
+    <!-- Imported from tasklist.js -->
+    <div id="tasklist">
+    </div>
+
+  </div>
+  
+
+  <!-- Task List Creator -->
   <form id="taskform">
     <label for="task">Task:</label>
     <input type="text" name="task" id="taskInput">
@@ -36,7 +54,7 @@
     <br>
 
     <label for="priority">Task Priority:</label>
-    <select name="prority" id="priorityInput">
+    <select name="priority" id="priorityInput">
       <option value="">Select one</option>
       <option value="Low">Low</option>
       <option value="Medium">Medium</option>
@@ -48,12 +66,14 @@
       <button type="submit">Submit</button>
   </form>
 
-  <button>Study Now</button>
-  <a href="/public/study_pge.html"><button>Enter the study room</button></a>
+
+  <!-- Daily Challenges -->
+  <div class="daily-challenges">
+    <button>Add to task list</button>
+    <button>Next</button>
+  </div>
 
 
-  <ul id="tasklist">
-  </ul>
-  <script src="tasklist.js"></script>  
+  <!-- <script src="script.js"></script>   -->
 </body>
-</html>
+</html> 

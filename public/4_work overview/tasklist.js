@@ -15,7 +15,8 @@ button.addEventListener("click", function(event) {
   let date = (new Date()).toLocaleDateString('en-US') //Convert to short date format
 
   // Call the addTask() function using
-  addTask(task, date, "26/03/2021", "Low", ["1", "30"], false);
+  // addTask(task, date, "26/03/2021", "Low", ["1", "30"], false);
+  addTask(task, date, dueDate, priorityRating, estimatedTime, completionStatus);
 
   // Log out the newly populated taskList everytime the button has been pressed
   console.log(taskList);
