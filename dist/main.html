@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="">
+  <!-- SCSS file -->
+  <link rel="stylesheet" href="/main.b2a7a68e.css"> 
+</head>
+<body>
+
+  <h1>Overview</h1>
+  <!-- Flow Time Tracker -->
+  <div class="flow-time" id="flow-time"></div>
+
+  <!-- Kanban Board -->
+  <div class="kanban-board" id="kanban"></div>
+
+  <!-- Task List Viewer -->
+  <div class="task-list" id="task-list-viewer">
+
+    <h1>Task List</h1>
+
+    <!-- Imported from tasklist.js -->
+    <div id="tasklist">
+    </div>
+
+  </div>
+  
+
+  <!-- Task List Creator -->
+  <div class="form-layout">
+    <form id="taskform">
+
+      <!-- Task Title -->
+      <label for="taskTitle">Task:</label>
+      <input type="text" name="task" id="taskTitle" required="">
+
+
+      <!-- Task Description -->
+      <label for="taskDescription">Task Description:</label>
+      <input type="text" name="task" id="taskDescription" required="">
+
+      <!-- Date input -->
+      <label for="dueDate">Due Date:</label>
+      <input type="date" name="dueDate" id="dueDateInput" required="">
+
+      <!-- Estimated Time Completed -->
+      <label for="estimatedTime">Estimated completion time (in mins):</label>
+      <input type="time" name="estimatedTime" id="estimatedTimeInput" required="">
+
+      
+      <!-- Completion Time -->
+      <label for="completionTime">Completion time:</label>
+      <input type="number" name="completionTime" id="completionTimeInput" required="">
+      
+
+      <!-- Category -->
+      <label for="category">Category</label>
+      <select name="category" id="categoryInput" required="">
+        <option value="" selected="" disabled="">Select one</option>
+        <option value="inspiration">Inspiration</option>
+        <option value="learning">Learning</option>
+        <option value="design">Design</option>
+      </select>
+
+      <br>
+
+      <!-- Priority -->
+      <label for="priority">Task Priority:</label>
+      <select name="priority" id="priorityInput">
+        <option value="" selected="" disabled="">Select one</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <br>
+
+      <!-- Status -->
+      <label for="status">Status</label>
+      <select name="status" id="statusInput">
+        <option value="" selected="" disabled="">Select one</option>
+        <option value="to-complete">To Complete</option>
+        <option value="in-progress">In Progress</option>
+
+      </select>
+
+      <br>
+      
+      <button type="submit">Add Task</button>
+    
+    </form>
+  </div>
+
+  <!-- Daily Challenges -->
+  <div class="daily-challenges">
+    <button>Add to task list</button>
+    <button>Next</button>
+  </div>
+
+
+  <script src="/main.b3778b64.js"></script>  
+</body>
+</html> 
