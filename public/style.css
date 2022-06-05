@@ -1,0 +1,90 @@
+:root {
+  font-family: 'Trebuchet MS';
+}
+
+head {
+    color: aliceblue;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+body {
+    margin: 30px;
+    background: rgb(131,58,180);
+}
+
+body {
+    background: linear-gradient(36deg, #7dd8c0, #f10000);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+
+body .h1 {
+  color: black;
+  text-align: center;
+  font-size: 100px;
+  }
+  
+  body .input {
+    width: 40px;
+  }
+
+  p {
+    color: aliceblue;
+    font-size: 20px;
+  }
+
+  form {
+      text-align: right;
+      color:rgb(248, 248, 248);
+      font-size: 20px;
+  }
+
+  form > label {
+    text-align: right;
+  }
+
+  button {
+    justify-content: center;
+    margin: 10px;
+    width: 200px;
+    height: 70px;
+    border: 0px;
+    border-radius: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  }
+
+  button:hover{
+    color: whitesmoke;
+    background: rgb(34,193,195);
+    background: linear-gradient(292deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }

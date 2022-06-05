@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h1>Kanban Board</h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/main.b2a7a68e.css">  
+</head>
+<body>
+
+  <!-- Side bar  -->
+  <div class="side-bar">
+
+    <!-- Inspiration Section -->
+    <div class="inspiration">
+    <a href="/3-inspiration-lookout/inspiration-lookout-main.html"><button>Inspiration Lookout</button></a>
+    <button>Look Through Inspiration</button>
+
+    </div>
+
+    <!-- Custom Feed for Inspiration -->
+    <div class="inspiration-feed">
+
+    </div>
+
+    <!-- Overview Section -->
+    <div class="overview">
+
+      <a href="/4-work-overview/work-overview.html"><button>Overview</button></a>
+      <a href="/4-work-overview/kanban-board.html"><button>Kanban Board</button></a>
+      <a href="/4-work-overview/flowtime-tracker.html"><button>Flow Time Tracker</button></a>
+
+    </div>
+
+    <div class="bottom">
+      
+      <a href="/5-the-zone/the-zone-main.html"><button>Enter The Zone</button></a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Task List Viewer -->
+  <div class="task-list" id="task-list-viewer">
+
+    <h1>Task List</h1>
+
+    <!-- Imported from tasklist.js -->
+    <div id="tasklist">
+    </div>
+
+  </div>
+
+    <!-- Code Source from https://codepen.io/karthikdevarticles/pen/PopxPwO -->
+    <div class="container">
+        <div class="kanban-heading">
+            <strong class="kanban-heading-text">Kanban Board</strong>
+        </div>
+        <div class="kanban-board">
+            <div class="kanban-block" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>To Do</strong>
+                <div class="task-button-block">
+                    <button id="task-button" onclick="createTask()">Create new task
+                </button></div>
+
+            </div>
+            <div class="kanban-block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>In Progress</strong>
+            </div>
+            <div class="kanban-block" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>Done</strong>
+            </div>
+            <div class="create-new-task-block" id="create-new-task-block">
+                <strong>New Task</strong>
+                <span class="form-row">
+                    <label class="form-row-label" for="task-name">Task</label>
+                    <input class="form-row-input" type="text" name="task-name" id="task-name">
+                </span>
+                <span class="form-row">
+                    <label class="form-row-label" for="task-name">Description</label>
+                    <textarea class="form-row-input" name="task-description" id="task-description" cols="70" rows="10"></textarea>
+                </span>
+                <span class="form-row">
+                    <label class="form-row-label" for="task-name">Status</label>
+                    <select class="form-row-input" name="task-status" id="task-status">
+                        <option value="todo">To Do</option>
+                        <option value="inprogress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
+                </span>
+                <span class="form-row-buttons">
+                    <button id="edit-button" onclick="editTask()">Edit</button></span>
+                    <button id="save-button" onclick="saveTask()">Save
+                    </button><button id="cancel-button" onclick="createTask()">Cancel
+                
+            </button></div>
+        </div>
+    </div>
+
+
+
+  <script src="/4-work-overview/kanban-board.3b9cb290.js"></script>  
+</body>
+</html> 
